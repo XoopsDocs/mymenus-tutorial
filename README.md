@@ -1,21 +1,31 @@
 ### _XOOPS Documentation Series_
 ![logoXoops.jpg](assets/logoXoops.jpg)
 
-# Module xLanguage
+# Module MyMenus
 #### for XOOPS 2.5.7
       
 ![logoModule.png](assets/logoModule.png)
             
 ## User Manual
 
-© 2016 XOOPS Project (www.xoops.org)    
+© 2016 XOOPS Project ([www.xoops.org](http://xoops.org))  
 
 ## Module Purpose 
 
 This module is for .....
 
 ![image001.png](assets/image001.png)
-*Figure 1: Main view of the xLanguage Module (Admin side)*
+*Figure 1: Main view of the MyMenus Module (Admin side)*
+
+## Download/Fork the Module ![](http://xoops.org/images/forkit.png)  
+
+**You can fork the module --> [here](https://github.com/XoopsModules25x/mymenus))** 
+
+## How to Contribute
+
+[You can contribute on GitHub](https://github.com/XoopsDocs/mymenus-tutorial). Changes will be [pushed to Gitbook.io automatically](https://www.gitbook.com/book/xoops/mymenus-tutorial/activity) when the [main repository](https://github.com/XoopsDocs/mymenus-tutorial) changes.
+
+Editing the book can be done either by updating the markdown files with a text editor, or opening the repository in [the Gitbook desktop app](https://github.com/GitbookIO/editor/blob/master/README.md). The desktop app will give you a live preview option.
 
 # Table of Content
 
@@ -26,7 +36,7 @@ This module is for .....
 * [The User Side](book/5userside.md)
 * [Blocks](book/6blocks.md)
 * [Templates](book/7templates.md)
-* [Other](book/8other.md) //delete, if not used
+* [Miscellaneous](book/8other.md) 
 * [Module Credits](book/9credits.md)
 * [About XOOPS CMS](book/10aboutxoops.md)
 
