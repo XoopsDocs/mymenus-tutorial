@@ -35,3 +35,10 @@ When you click on the "Add new Item" Button, you can create the new link for you
 |8|Who should see the link? You can choose from the available groups|
 |9|You can also "style" the link with CSS|
 
+![](/en/assets/about.png)
+
+The About Tab show information about the Module, version number, authors and contributors, as well as the Changelog.
+
+![](/en/assets/help.png)
+
+The final tab provides some help information about the module, as well as several useful links, e.g. to this Tutoral, to XOOPS Website, translations, etc.
