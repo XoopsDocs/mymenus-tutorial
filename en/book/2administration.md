@@ -19,3 +19,19 @@ Please not that when you're in the Filter-View, you can always click on the "Lis
 
 You can Edit the Menu, delete it, or you can go to the Menu links
 
+![](/en/assets/img000168.png)
+
+When you click on the "Add new Item" Button, you can create the new link for your Menu:
+
+|Field #|Description|
+|--|--|
+|1|Enter the title of your link|
+|2|Your alternative title for the link|
+|3|Select which Menu will this link belong to|
+|4|Add the URL link|
+|5|You can also provide a link to an image|
+|6|At any time, you can change the link status to "off-line" or back to "on-line"|
+|7|Select where the link should open? Same window? A new window?|
+|8|Who should see the link? You can choose from the available groups|
+|9|You can also "style" the link with CSS|
+
