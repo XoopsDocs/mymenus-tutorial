@@ -14,9 +14,7 @@
 
 This module is a Menu Manager module that allows you to display dynamic or static menus in your XOOPS website.
 
-![image001.png](/en/assets/image001.png)
-
-![](en/assets/image001.png)
+![image001.png](en/assets/image001.png/)
 
 *Figure 1: Main view of the MyMenus Module (Admin side)*
 
