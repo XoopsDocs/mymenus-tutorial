@@ -1,17 +1,18 @@
-# 4.0 Operating Instructions
+# Operating Instructions
 
-###Theory of operation
+## Theory of operation
 
 Mymenus separates logic from presentation almost 100%!
 
 It is mymenus task to generate an array with menus information and let each skin decide what to do with that information.
 
-How can skin know when to open a new ```<li>``` or ```<ul>``` and when to close it?
+How can skin know when to open a new `<li>` or `<ul>` and when to close it?
 
-Mymenus append that information to each menu item, that way you can know if that item should be prefixed with a <li> or not.
+Mymenus append that information to each menu item, that way you can know if that item should be prefixed with a  or not.
 
 This is the composition of an item array:
-```
+
+```php
  [id] => 3 (id of the menu item)
  [pid] => 0 (id of the parent menu item)
  [mid] => 2 (id of the menu package)
@@ -42,18 +43,21 @@ This is the composition of an item array:
  )
 ```
 
-####Skin structure
+### Skin structure
 
 Skins go into
-```
+
+```text
 "mymenus/skins" folder or
 
 "public_html/themes/yourtheme/menu" folder
 ```
-and they should have a skin_version.php file in it
 
-**skin_version.php structure:**
-```
+and they should have a skin\_version.php file in it
+
+**skin\_version.php structure:**
+
+```php
  //informs where to find the template for this skin(relative to skin folder)
 
  $skinVersion['template'] = 'templates/template.tpl';
@@ -62,16 +66,20 @@ and they should have a skin_version.php file in it
 
  $skinVersion['css'] = 'assets/css/superfish.css';
 ```
- or
-```
+
+or
+
+```php
  $skinVersion['css'] = array('css/superfish.css', css/anotherone.css);
 
  //informs where to find js file/files
 
  $skinVersion['js'] = '../../js/assets/jquery-1.3.2.min.js';
 ```
- or
-```
+
+or
+
+```php
  $skinVersion['js'] = array(
 
  '../../js/jquery-1.3.2.min.js'
@@ -83,8 +91,9 @@ and they should have a skin_version.php file in it
  );
 ```
 
-** //code to be appended in the <head> theme tag**
-```
+ **//code to be appended in the  theme tag**
+
+```php
  $header = "\n" . '<script type="text/javascript">';
  $header .= "\n" . ' var $sf = jQuery.noConflict()';
  $header .= "\n" . ' $sf(function(){';
@@ -98,32 +107,36 @@ and they should have a skin_version.php file in it
  $header .= "\n" . '</script>';
  $skinVersion['header'] = $header;
 ```
-** //you can pass any configuration from this file to the template using ['config']**
 
- example:
-```
+ **//you can pass any configuration from this file to the template using \['config'\]**
+
+example:
+
+```php
  $skinVersion['config']['home'] = true;
  $skinVersion['config']['iconset'] = 'default';
 ```
- This can be fetched in template with ```<{$config.home}>``` and ```<{$config.iconset}>```
 
+This can be fetched in template with `<{$config.home}>` and `<{$config.iconset}>`
 
-#### Smarty variables available in the template
-```
+### Smarty variables available in the template
+
+```php
 $block - holds an array of menu items
 $config - holds configuration set in skin_version.php
 $skinurl - holds the url of the skin
 $skinpath - holds the path of the skin
 ```
 
-#### For Theme designers
+### For Theme designers
 
 Since users can choose the smarty variable for each menu,
 
-I would advise you to use <{$xoops_links_navbar}> as a place holder.
+I would advise you to use &lt;{$xoops\_links\_navbar}&gt; as a place holder.
 
 If you provide a skin for your theme, ask users to:
-```
+
+```text
 -- --enter "xoops_links_navbar" as unique_id in block settings.
 
 -- --set "render to smarty variable" in block settings.
@@ -131,12 +144,11 @@ If you provide a skin for your theme, ask users to:
 -- --set "use skin from theme" in block settings.
 ```
 
-
-###Important to know:
+## Important to know:
 
 Links and images are relative to the root of your site:
 
-```
+```text
 modules/profile
 search.php
 uploads/blank.gif
@@ -144,28 +156,28 @@ uploads/blank.gif
 
 For linking to external sites you need to use complete url:
 
-http://www.xuups.com
+[http://www.xuups.com](http://www.xuups.com)
 
-You can use DECORATORS for links, images, title, and alt_title.
+You can use DECORATORS for links, images, title, and alt\_title.
 
 The decorators follow this syntax:
 
-```
+```php
 {decorator|value}
 ```
 
 **There are 6 decorators available:**
 
-* USER -> gets info for the user that is seeing the page
-* OWNER -> gets info for the user that match uid on the url(if given)
-* URI -> gets info about the url arguments
-* MODULE -> gets dynamic menu from a module (Used in title field only)
-* SMARTY -> gets smarty variables
-* CONSTANT -> gets defined constants
+* USER -&gt; gets info for the user that is seeing the page
+* OWNER -&gt; gets info for the user that match uid on the url\(if given\)
+* URI -&gt; gets info about the url arguments
+* MODULE -&gt; gets dynamic menu from a module \(Used in title field only\)
+* SMARTY -&gt; gets smarty variables
+* CONSTANT -&gt; gets defined constants
 
-Some syntax examples{USER|UNAME} gets the username of this user, returns anonymous if not a user{USER|UID} gets the uid of this user, returns 0 if not a user{USER|REGDATE} gets the regdate of this user, returns empty if not a user{USER|any other field of the user table} yes! You can get what you need!Some special fields you may use:
+Some syntax examples{USER\|UNAME} gets the username of this user, returns anonymous if not a user{USER\|UID} gets the uid of this user, returns 0 if not a user{USER\|REGDATE} gets the regdate of this user, returns empty if not a user{USER\|any other field of the user table} yes! You can get what you need!Some special fields you may use:
 
-```
+```text
 {USER|PM_NEW} Show number of private messages not read
 {USER|PM_READED}
 {USER|PM_TOTAL}
@@ -173,14 +185,14 @@ Some syntax examples{USER|UNAME} gets the username of this user, returns anonymo
 
 The same is valid for OWNER:
 
-```
+```text
 {OWNER|UNAME}
 {OWNER|UID}etc..
 ```
 
 And you can get any parameter on the uri with:
 
-```
+```text
 {URI|UID}{URI|ID}
 {URI|SEARCH}
 {URI|ITEMID}
@@ -189,21 +201,21 @@ And you can get any parameter on the uri with:
 
 Example of links using decorators:
 
-```
+```text
 modules/profile/userinfo.php?uid={USER|UID}
 modules/yogurt/pictures.php?uid={OWNER|UID}
 ```
 
 Example on titles using decorators:
 
-```
+```text
 {USER|UNAME}
 {OWNER|UNAME} profile
 ```
 
-You have searched for {URI|SEARCH}Populating menus with modules information:
+You have searched for {URI\|SEARCH}Populating menus with modules information:
 
-```
+```text
 {MODULE|NEWS}
 {MODULE|XHELP}
 {MODULE|MYLINKS}
@@ -212,16 +224,15 @@ You have searched for {URI|SEARCH}Populating menus with modules information:
 
 Using smarty information:
 
-```
+```text
 {SMARTY|xoops_uname}
 {SMARTY|xoops_avatar}
 ```
 
 Using constants information:
 
-```
+```text
 {CONSTANT|XOOPS_URL}/myimages/image.gif
 {CONSTANT|XOOPS_ROOT_PATH}
 ```
-
 
