@@ -8,7 +8,7 @@
             
 ## User Manual
 
-© 2016 XOOPS Project ([www.xoops.org](http://xoops.org))  
+© 2016 XOOPS Project ([www.xoops.org](https://xoops.org))  
 
 ## Module Purpose 
 
@@ -17,7 +17,7 @@ This module is for .....
 ![image001.png](assets/image001.png)
 *Figure 1: Main view of the MyMenus Module (Admin side)*
 
-## Download/Fork the Module ![](http://xoops.org/images/forkit.png)  
+## Download/Fork the Module ![](https://xoops.org/images/forkit.png)  
 
 **You can fork the module --> [here](https://github.com/XoopsModules25x/mymenus))** 
 
