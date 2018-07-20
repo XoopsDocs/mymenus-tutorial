@@ -38,6 +38,6 @@ When you click on Edit, you can customize the menu to your needs:
 
 You can add a MyMenus block directly in a theme, by assigning it ta a Smarty template 
 
-![](.gitbook/assets/blocks2.png)
+![](.gitbook/assets/mymenuID.png)
 
 
