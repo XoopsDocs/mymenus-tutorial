@@ -1,10 +1,10 @@
 # Introduction
 
-![logoXoops.jpg](.gitbook/assets/logoxoops%20%281%29.jpg)
+![logoXoops.jpg](.gitbook/assets/logoxoops %281%29.jpg)
 
 ## Module MyMenus
 
-#### for XOOPS 2.5.7
+#### for XOOPS 2.5.9
 
 ![logoModule.png](.gitbook/assets/logomodule.png)
 

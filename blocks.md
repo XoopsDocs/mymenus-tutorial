@@ -34,3 +34,10 @@ When you click on Edit, you can customize the menu to your needs:
 | 10 | Select the groups that will be allowed to see the Menu Block |
 | 11 | Once you done, you can save it |
 
+## Adding Menu Block Directly in Theme
+
+You can add a MyMenus block directly in a theme, by assigning it ta a Smarty template 
+
+![](.gitbook/assets/blocks2.png)
+
+
