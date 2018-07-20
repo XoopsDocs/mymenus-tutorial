@@ -34,3 +34,17 @@ When you click on Edit, you can customize the menu to your needs:
 | 10 | Select the groups that will be allowed to see the Menu Block |
 | 11 | Once you done, you can save it |
 
+## Adding Menu Block Directly in Theme
+
+You can add a MyMenus block directly in a theme, by assigning it to a Smarty template in your block: 
+
+
+![](.gitbook/assets/mymenuID.png)
+
+
+Once you save the block, then you can add at the template of your choice the Smarty variable, e.g. here I've added it in the menu file ```/tpl/nav-menu.tpl``` located in the **xbootstrap **theme: 
+```html
+<li class="nav-item"><{$xoops_menu_1531793538}></li>
+```
+
+
