@@ -41,3 +41,12 @@ You can add a MyMenus block directly in a theme, by assigning it ta a Smarty tem
 ![](.gitbook/assets/mymenuID.png)
 
 
+![](.gitbook/assets/mymenuID.png)
+
+
+Once you save the block, then you can add at the location of your choice the Smarty variable, e.g. here I've added it in the menu file ```/tpl/nav-menu.tpl``` located in the **xbootstrap **theme: 
+```html
+<li class="nav-item"><{$xoops_menu_1531793538}></li>
+```
+
+
